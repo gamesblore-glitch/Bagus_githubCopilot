@@ -78,12 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
       // Hide message after 5 seconds
       setTimeout(() => {
         messageDiv.classList.add("hidden");
-    } 5000);
-  }); catch (error) {
+      }, 5000);
+    } catch (error) {
       messageDiv.textContent = "Failed to sign up. Please try again.";
-  // Initialize appassName = "error";
-  fetchActivities();ssList.remove("hidden");
-});   console.error("Error signing up:", error);
+      messageDiv.className = "error";
+      messageDiv.classList.remove("hidden");
+      console.error("Error signing up:", error);
     }
   });
 

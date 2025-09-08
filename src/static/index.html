@@ -13,7 +13,7 @@
     </header>
  
     <main>
-      <section id="activities-container">
+      <section id="activities-container" class="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
           <!-- Activities will be loaded here -->
@@ -38,25 +38,6 @@
           <button type="submit">Sign Up</button>
         </form>
         <div id="message" class="hidden"></div>
-      </section>
-
-      <section id="activity-template" class="hidden">
-        <div class="activity-card">
-          <h2 class="activity-title">{{activity_name}}</h2>
-          <p class="activity-description">{{description}}</p>
-          <p class="activity-schedule"><strong>Schedule:</strong> {{schedule}}</p>
-          <p class="activity-max"><strong>Max Participants:</strong> {{max_participants}}</p>
-          <div class="participants-section">
-            <strong>Participants:</strong>
-            <ul class="participants-list">
-              <!-- Participants will be rendered here by JS -->
-            </ul>
-          </div>
-          <form class="signup-form">
-            <input type="email" class="signup-email" placeholder="Your email" required />
-            <button type="submit">Sign Up</button>
-          </form>
-        </div>
       </section>
     </main>
 
